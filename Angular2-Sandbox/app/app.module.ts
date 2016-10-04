@@ -3,9 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 
+import {TestModule} from "./test.module";
+//import {Test} from "./test.component";
+
+
 @NgModule({
-  imports: [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ]
+    imports: [BrowserModule, TestModule ],
+  declarations: [AppComponent ],
+  bootstrap: [AppComponent ]
 })
 export class AppModule { }
